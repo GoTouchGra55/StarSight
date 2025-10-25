@@ -20,7 +20,7 @@ if uploaded_file:
     img_cv = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
 
     # Run YOLO inference
-    results = model(img_cv)
+    results = model(img)
     annotated = results[0].plot()
 
     # Show detection
